@@ -35,7 +35,7 @@ public class Application01 {
         hmap.put(33, 123);
         //autoBoxing 처리 됨 : 12 => new Integer(12)
 
-        System.out.println("hmap = " + hmap);   //랜덤순서로 한줄로 출력됨...
+        System.out.println("hmap = " + hmap);   // 랜덤순서로 한줄로 출력됨...
 
         hmap.put(12,"fine apple");
         System.out.println("hmap = " + hmap);

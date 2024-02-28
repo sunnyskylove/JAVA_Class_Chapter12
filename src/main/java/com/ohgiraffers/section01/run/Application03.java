@@ -14,7 +14,7 @@ public class Application03 {
 
         Stack<Integer> integerStack = new Stack<>();
 
-        /* 필기. 값을 넣을 때는 push() 메소드를 이용한다. add() 도 가능하다. */
+        /* 필기. 값을 넣을 때는 push() 메소드를 이용한다. = add() 도 가능하다. */
         integerStack.push(1);
         integerStack.push(2);
         integerStack.push(3);
@@ -28,11 +28,11 @@ public class Application03 {
         *   또한 가장 상단의 위치가 0이 아닌 1부터 시작한다.  (뒤에서부터가 1이므로..)
         *  */
 
-        System.out.println(integerStack.search(5));         //>>출력값이 1이 나온다. (인덱스랑 반대인 뒤어서부터~~!!)
+        System.out.println(integerStack.search(5));         //>>출력값이 1이 나온다. (인덱스랑 반대인 뒤에서부터~~!!)
 
         /* 필기.
-        *   peek() : 해당 스택의 가장 마지막에 있는(상단) 요소 반환____마지막의 것을 조회만 한다.
-        *   pop() : 해당 스택의 가장 마지막에 있는(상단) 요소 반환 후 제거___마지막의 것을 조회후 삭제
+        *   peek() : 해당 스택의 가장 마지막에 있는(상단) 요소 반환____ 마지막의 것 '조회' 만 한다.
+        *   pop() : 해당 스택의 가장 마지막에 있는(상단) 요소 반환 후 제거___ 마지막의 것 '조회후 삭제'(=delete)
         * */
 
         System.out.println("peek() : " + integerStack.peek());

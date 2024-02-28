@@ -29,14 +29,14 @@ public class Application01 {
         /* 필기.
         *   각 인터페이스 별 특징
         *   1. List 인터페이스
-        *   - 순서 있는 데이터의 집합으로 데이터의 중복 저장을 허용한다.
+        *   - 순서 있는 데이터의 집합으로 데이터의 중복 저장(0)을 허용한다.
         *   - Vector, ArrayList, LinkedList, Stack, Queue 등이 있다.
         *   2. Set 인터페이스
-        *   - 순서가 없는 데이터의 집합으로 데이터의 중복을 허용하지 않는다.
+        *   - 순서가 없는 데이터의 집합으로 데이터의 중복(x)을 허용하지 않는다.
         *   - HashSet, TreeSet 등이 있다.
         *   3. Map 인터페이스
         *   - 키와 값 한 쌍으로 이루어지는 데이터 집합이다.
-        *   - key 를 Set 방식으로 관리하기 때문에 데이터의 순서를 관리하지 않고, 중복된 key를 허용하지 않는다.
+        *   - key 를 Set 방식으로 관리하기 때문에 데이터의 순서를 관리하지 않고, 중복된 key 를 허용하지 않는다.
         *   - HashMap, TreeMap, HashTable, Properties 등이 있다.
         * */
 
@@ -48,7 +48,7 @@ public class Application01 {
 
         /* 필기.
         *   ArrayList 는 배열의 단점을 보완하기 위해 만들어졌다.
-        *   배열의 단점 : 크기 변경 불가, 요소의 추가, 수정, 삭제, 정렬 등이 복잡함.
+        *   - 배열의 단점 : 크기 변경 불가, 요소의 추가, 수정, 삭제, 정렬 등이 복잡함.
         *   따라서 ArrayList 는 배열의 단점을 극복하고자
         *   크기 변경(새로운 더 큰 배열 만들고 옮기기), 요소의 추가, 수정, 삭제, 정렬 기능을
         *   미리 메소드로 구현하여 제공하고 있다.
@@ -61,12 +61,12 @@ public class Application01 {
         *   List 인터페이스 하위의 다양한 구현체들로 타입 변경이 가능하기 때문에
         *   레퍼런스 타입은 List 로 해두는 게 더 유연한 코드를 작성하는 것이다.
         * */
-        List list = new ArrayList<>();                  // 상위의 방법보다는 주로 이렇게 작성한다.(유연한 코드로 작성)
+        List list = new ArrayList<>();              // 상위의 방법보다는 주로 이렇게 작성한다.(유연한 코드로 작성)
 
-        alist.add("apple");                 // 가로 안에 값 넣기, autoBoxing( 값-> 객체/int -> Integer)
+        alist.add("apple");                         // 가로 안에 값 넣기, autoBoxing( 값-> 객체/int -> Integer)
         alist.add(123);
         alist.add(45.67);
-        alist.add(new Date());                  // * 오류뜰때, import 해주기~~
+        alist.add(new Date());                      // * 오류뜰때, import 해주기~~
 
         System.out.println("alist = " + alist);
         // >> 배열처럼 값이 모두 출력됨 (toString 메소드가 overriding 되어 있다.)
@@ -78,7 +78,7 @@ public class Application01 {
         System.out.println("alist의 size : " + alist.size());
 
         for(int i = 0; i < alist.size(); i++){
-            System.out.println(i + " : " + alist.get(i));               // get으로 i를 가져오겠다.
+            System.out.println(i + " : " + alist.get(i));               // get 으로 i를 가져오겠다.
         }
 
         /* 필기. 데이터의 중복 판단 */

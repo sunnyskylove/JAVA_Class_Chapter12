@@ -30,14 +30,20 @@ public class Application01 {
 
         hset.add("java");
         System.out.println("hset = " + hset);       // 첫번째 무작위 출력값과 동일하게 출력된다.
+                                                    // "java" 가 추가되었어도 동일한 값이기 때문에 중복으로 출력되지 않는다.
+
 
         System.out.println("포함하고 있는지? : " + hset.contains("mysql")); // 포함 확인
 
+
+
         /* 목차. 1. toArray() : 배열로 바꿈 */
         Object[] arr = hset.toArray();
+
         for (int i = 0; i < arr.length; i++) {
             System.out.println(i + " : " + arr[i]);    // 순서 없음, 출력본이 원래 순서는 아님!!
         }
+
 
         /* 목차. 2. iterator() 로 목록을 만들어 연속 처리*/
         Iterator<String> iter = hset.iterator();

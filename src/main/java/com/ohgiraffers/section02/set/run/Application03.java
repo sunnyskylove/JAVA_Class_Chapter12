@@ -24,12 +24,13 @@ public class Application03 {
         // 자동 오름차순 정렬이 됨.
         System.out.println("tset = " + tset);
 
+
         /* 로또 번호 발생 */
         Set<Integer> lotto = new TreeSet<>();
 
-        while(lotto.size() < 7) {               // 인덱스 0부터 시작~~
+        while(lotto.size() < 7) {                                // 인덱스 0부터 시작~~
 
-            lotto.add((int) (Math.random() * 45) +1 );          // 형변환 Alt+enter 로 자동만들기~~
+            lotto.add((int) (Math.random() * 45) + 1);          // 형변환 Alt+enter 로 자동만들기~~
         }
         System.out.println("lotto = " + lotto);
     }

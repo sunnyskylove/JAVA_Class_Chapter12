@@ -20,7 +20,7 @@ public class Application02 {
 
         Properties prop = new Properties();
         
-        prop.setProperty("driver","com.mysql.cj.jdbc.Driver");      // key값,value값으로 만들어 불러온다. (???)
+        prop.setProperty("driver","com.mysql.cj.jdbc.Driver");      // key값,value값 으로 만들어 불러온다. (???)
         prop.setProperty("url","jdbc:mysql://localhost/menu");
         prop.setProperty("user", "ohgiraffers");
         prop.setProperty("password","ohgiraffers");
